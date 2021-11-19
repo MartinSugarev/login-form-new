@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+}
+
+.home-page-register{
+  width: 30vw;
+  height: 80vh;
+  position: absolute;
+  left: 33%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+.login-p{
+  font-size: 0.8em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.login-btn{
+  border: none;
+  color: red;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: transparent;
+
+}
+.home-page-login{
+  width: 30vw;
+  height: 80vh;
+  position: absolute;
+  left: 33%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+.home-page{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction:column;
+  align-items: center;
+  
+  }
+  .home-page-salute{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-container{
+    width: 90vw;
+    height: 40vh;
+    border-style: dotted;
+    border-color: tomato;
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    overflow: scroll;
+    
+  }
+  .upload-form{
+    position: relative;
+    left: 29%;
+  }
+  .upload-btn{
+    position: relative;
+    right: 20%;
+
+  }
+  .upload-btn:hover{
+   background-color: blue;
+   cursor: pointer;
+  }
+  .img-style{
+    height: 100%;
+    width: 300px;
+    border-radius: 25px;
+    padding: 5px;
+    position: relative;
+  }
+ 
+  
+  img + button{
+    position: relative;
+    bottom: 10%;
+    right: 25%;
+    cursor: pointer;
+  }  
+  .logout-component{
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  
+    
+  }
+  .logout-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+  }
+ 
+  .h-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5px;
+      justify-items: center;
+    }
+    .img-style{
+      height: 100%;
+      width: 250px;
+      border-radius: 25px;
+      padding: 5px;
+    }
+    img + button{
+      position: relative;
+      cursor: pointer;
+      right: 50%;
+      bottom: 7%;
+    }  
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5px;
+      justify-items: center;
+    }
+    .img-style{
+      height: 100%;
+      width: 220px;
+      border-radius: 25px;
+      padding: 5px;
+    }
+    img + button{
+      position: relative;
+      cursor: pointer;
+      bottom: 14%;
+      
+    }  
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5px;
+      justify-items: center;
+    }
+    .img-style{
+      height: 100%;
+      width: 220px;
+      border-radius: 25px;
+      padding: 5px;
+    }
+    img + button{
+      position: relative;
+      cursor: pointer;
+      bottom: 14%;
+      left: 30%;
+    }  
+  }
+
+  @media only screen and (max-width: 850px) {
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5px;
+      justify-items: center;
+    }
+    .img-style{
+      height: 100%;
+      width: 200px;
+      border-radius: 25px;
+      padding: 5px;
+    }
+    img + button{
+      position: relative;
+      cursor: pointer;
+      bottom: 12%;
+      left: -50%;
+        }  
+  }
+  @media only screen and (max-width: 650px) {
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 5px;
+      justify-items: center;
+    }
+    .img-style{
+      height: 100%;
+      width: 220px;
+      border-radius: 25px;
+      padding: 5px;
+    }
+    img + button{
+      position: relative;
+      cursor: pointer;
+      bottom: 10%;
+    
+        }  
+  }
