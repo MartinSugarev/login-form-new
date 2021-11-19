@@ -1,5 +1,11 @@
 const mongoose = require("mongoose")
-const URI = "mongodb+srv://test-user:test123456@cluster0.ufu7w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+const user = process.env.USERNAME;
+const pass = process.env.PASSWORD;
+
+
+
+const URI = `mongodb+srv://${user}:${pass}@cluster0.ufu7w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 
 const connect =  () => {
